@@ -1,7 +1,7 @@
 /* --- Global style --- */
 
 body {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-family: "Raleway", sans-serif;
     color: #445361;
     text-align: center;
@@ -56,12 +56,12 @@ body {
 }
 
 #score {
-    color: green;
+    color: rgb(0, 128, 0);
     font-weight: bold;
 }
 
 #incorrect {
-    color: red;
+    color: rgb(255, 0, 0);
     font-weight: bold;
 }
 
@@ -84,3 +84,85 @@ body {
     padding: 25px;
 }
 
+/* --- Buttons --- */
+
+.btn {
+    width: 220px;
+    height: 60px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: rgb(255, 255, 255);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn--big {
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    transition: all 0.5s;
+}
+
+.btn--blue {
+    border-color: rgb(3, 3, 252);
+    color: rgb(0, 0, 255);
+}
+
+.btn--blue:active,
+.btn--blue:hover {
+    background-color: rgb(0, 0, 139);
+    color: rgb(255, 255, 255);
+}
+
+.btn--orange {
+    border-color: rgb(255, 165, 0);
+    color: rgb(255, 165, 0);
+}
+
+.btn--orange:active,
+.btn--orange:hover {
+    background-color: rgb(255, 140, 0);
+    color: rgb(255, 255, 255);
+}
+
+.btn--red {
+    border-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+}
+
+.btn--red:active,
+.btn--red:hover {
+    background-color: rgb(139, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.btn--green {
+    border-color: rgb(0, 128, 0);
+    color: rgb(0, 128, 0);
+}
+
+.btn--green:active,
+.btn--green:hover {
+    background-color: rgb(0, 100, 0);
+    color: rgb(255, 255, 255);
+}
+
+.btn--gray {
+    margin-top: 25px;
+    background-color: #445361;
+    border: 1px transparent;
+    border-radius: 20px;
+}
+
+.btn--gray:active,
+.btn--gray:hover {
+    background-color: #0d1013;
+}
