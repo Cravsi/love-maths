@@ -68,7 +68,7 @@ function checkAnswer() {
         incrementIncorrectAnswer();
     }
 
-    runGame('addition');
+    runGame(calculatedAnswer[1]);
 }
 
 /**
@@ -82,6 +82,8 @@ function calculateCorrectAnswer() {
 
     if (operator === '+') {
         return [operand1 + operand2, 'addition']
+    } else if (operator === 'x') {
+        return [operand1 * operand2, 'multiply']
     } else {
         alert(`Unimplemented operator ${operator}`);
         throw `Unimpletmenter operator ${operator}. Aborted!`;
@@ -121,8 +123,13 @@ function displaySubtractionQuestion () {
     
 }
 
-function displayMultiplyQuestion () {
-    
+/**
+ * Function to run multiplication questions
+ */
+function displayMultiplyQuestion (operand1, operand2) {
+    document.getElementById('operand1').textContent = operand1;
+    document.getElementById('operand2').textContent = operand2;
+    document.getElementById('operator').textContent = 'x';
 }
 
 function displayDivideQuestion () {
